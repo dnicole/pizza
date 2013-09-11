@@ -9,7 +9,7 @@ module Pizza
     #              cheese if no other toppings.
     #
     # Returns a new pizza object.
-    def initialize(toppings = [Topping.new("cheese")])
+    def initialize(toppings = [Topping.new("cheese", vegetarian: true)])
       @toppings = toppings
     end
   end
