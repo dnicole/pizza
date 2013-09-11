@@ -10,6 +10,7 @@ describe Pizza::Pie do
         Pizza::Topping.new('mushrooms', vegetarian: true),
         Pizza::Topping.new('pepperoni')
       ]
+      pizza = Pizza::Pie.new(toppings)
       
       expect(pizza.toppings).to eq(toppings)
     end
